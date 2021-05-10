@@ -25,8 +25,8 @@ app.get("/", (request, response) => {
     .find()
     .sort({ likes: -1 })
     .toArray()
-    .then((data) => {
-      response.render("index.ejs", { info: data });
+    .then((poop) => {
+      response.render("index.ejs", { info: poop });
     })
     .catch((error) => console.error(error));
 });
